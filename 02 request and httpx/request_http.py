@@ -10,3 +10,6 @@ print(response.headers)
 data = response.json()        # safe now
 print(data)
 
+r = httpx.get(url)
+print(r.status_code)
+print(r.json())
