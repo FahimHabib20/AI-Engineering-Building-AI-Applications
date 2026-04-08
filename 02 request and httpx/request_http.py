@@ -1,10 +1,12 @@
-# The requests libary (htps for humans)
 import requests
-url = 'https://open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&hourly=temperature_2m'
-response = requests.get(url) #  get requests
-# print(response.json())
-print(response.status_code)
+import httpx
+url = 'https://api.open-meteo.com/v1/forecast?latitude=35&longitude=139&hourly=temperature_2m'
+
+response = requests.get(url)
+
+print(response.status_code)   # check first
+print(response.text[:200])    # debug
 print(response.headers)
-print(response.text)
-data = response.json()
+data = response.json()        # safe now
 print(data)
+
