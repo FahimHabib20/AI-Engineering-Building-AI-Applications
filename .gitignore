@@ -1,0 +1,35 @@
+# Python virtual environments
+myvenv/
+venv/
+ENV/
+.env/
+.env
+.envrc
+.venv/
+01Venv/
+enviroment/
+
+# Python bytecode
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
+*.eggs/
+*.wheel
+
+# PyInstaller
+*.manifest
+*.spec
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
